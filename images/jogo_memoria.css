@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(90deg, rgba(127, 61, 171, 0.616) 20%, rgba(30, 30, 153, 0.514) 84%);
+    font-size: 23   px;
+    width: 100%;
+    max-width: 800px;
+    padding: 30px;
+    
+    border-radius: 10px;
+    font-family: 'Share Tech Mono', monospace;
+    color: white;
+}
+body{
+    /* background-image: url(../images/teste-backgound.jpg); */
+    background: url('images/background.jpg');
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    width: 100%;
+    max-width: 800px;
+   
+    margin: 0 auto;
+}
+
+.card{
+    aspect-ratio: 3/4;
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+    transition: all 400ms ease;
+    transform-style: preserve-3d;
+    background-color: rgba(204, 204, 204, 0.546);
+    
+}
+
+
+
+.face{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+   
+}
+
+.front{
+   
+    transform: rotateY(180deg);
+  
+   
+}
+
+.back{
+    background: url("images/teste-backgound.jpg");
+    backface-visibility: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+.girar-card{
+    transform: rotateY(180deg);
+}
+
+.desabilitar-card{
+    filter: saturate(0);
+    opacity: 0.5;
+    transition: all 400ms ease;
+}
+
+.novo-jogo{
+    padding: 15px 40px;
+    margin-top: 10px;
+    font-family: 'Share Tech Mono', monospace;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(90deg, rgba(127, 61, 171, 0.829) 20%, rgba(30, 30, 153, 0.829) 84%);
+    color: white;
+    
+}
+
+.instrucoes{
+    color: white;
+    font-family: 'Share Tech Mono', monospace;
+    padding: 15px;
+    background: rgba(209, 28, 28, 0.781);
+    margin: 10px;
+    border-radius: 7px;
+    height: 25px;
+    font-size: 17px;
+    
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo dos filmes</title>
+    <link rel="stylesheet" href="jogo_filmes.css">
+</head>
+
+<body>
+    <a href="index.html">
+        <img style="margin-left: 15px;" width="45px" src="images/voltar.png" alt="">
+    </a>
+
+    <main>
+        <div class="jogo">
+            <h1>Bem vindo ao Jogo dos Filmes</h1>
+    
+            <h3>Digite uma palavra e veja o que acontece!</h3>
+    
+            <p>Homem-Aranha: De volta ao <strong id="Filme_1" class="filme">lar</strong></p>
+            <p> O <strong id="Filme_2" class="filme">Incrível </strong> Hulk</p>
+            <p>Homem-Formiga e a <strong id="Filme_3" class="filme">Vespa</strong></p>
+            <p><strong id="Filme_4" class="filme">Homem</strong> de Ferro</p>
+            <p>Guardiôes da <strong id="Filme_5" class="filme">Galáxia</strong></p>
+            <br>
+            <input type="text" id="palavra" placeholder="Digite uma palavra"> <br> <button onclick="muda_palavra()">Jogar</button>
+            <br><br>
+        </div>
+
+    </main>
+   
+
+
+    <!-- <button onclick="GAME_WORD()"> Jogar 2</button>   -->
+
+    <script>
+        function muda_palavra() {
+            var palavra = document.getElementsByTagName("strong");
+            var nova_palavra = document.getElementById("palavra").value;
+
+            console.log(nova_palavra)
+
+            for (i = 0; 1 < palavra.length; i++) {
+                palavra[i].innerHTML = nova_palavra;
+            }
+        }
+
+        /*function GAME_WORD(){
+             var user_word = document.getElementById("palavra").value;
+ 
+             document.getElementById("Filme_1").innerHTML = user_word;
+             document.getElementById("Filme_2").innerHTML = user_word;
+             document.getElementById("Filme_3").innerHTML = user_word;
+             document.getElementById("Filme_4").innerHTML = user_word;
+             document.getElementById("Filme_5").innerHTML = user_word;
+            
+         }*/
+    </script>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+</body>
+
+</html>

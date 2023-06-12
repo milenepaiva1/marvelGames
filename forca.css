@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+* {
+    border: none;
+
+
+}
+
+body {
+
+    
+    background: url(images/bg-forca.jpg);
+    background-size: cover;
+
+
+}
+
+
+button {
+    font-size: 14px;
+    color: #ffffff;
+    padding: 10px 20px;
+    background: linear-gradient(to bottom, #918e8e 0%,
+            #242424 50%, #141212 50%, #000000);
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+button:hover {
+    background: rgba(47, 45, 45, 0.788);
+}
+
+button:disabled {
+    background-color: #b5b2b2;
+    color: #cbcbcb;
+}
+
+#jogo {
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#titulo {
+    text-align: center;
+    margin: 40px auto;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #ffffffda;
+    font-family: 'Righteous', cursive;
+}
+
+#tabeladiv {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#forca img {
+    width: 65%;
+    height: 65%;
+    float: right;
+    background: linear-gradient(254deg, rgba(33, 13, 40, 1) 8%, rgba(12, 28, 84, 0.493) 32%, rgba(42, 52, 112, 0.538) 53%, rgba(107, 112, 160, 0.579) 81%, rgba(112, 76, 101, 0.675) 99%);
+    border-radius: 20%;
+    padding: 10px;
+}
+
+#tenta {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+input {
+    width: 100%;
+    max-width: 6%;
+    background-color: rgba(0, 0, 0, 0.885);
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#tema {
+    background: linear-gradient(254deg, rgba(33, 13, 40, 1) 8%, rgba(12, 28, 84, 0.493) 32%, rgba(42, 52, 112, 0.538) 53%, rgba(107, 112, 160, 0.579) 81%, rgba(112, 76, 101, 0.675) 99%);
+    background-color: #c6c6c6ca;
+    padding: 10px;
+    border-radius: 7px;
+    margin: 0 20% 0 20%;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+  
+
+}
+
+.instrucoes {
+    background: linear-gradient(254deg, rgba(33, 13, 40, 1) 8%, rgba(12, 28, 84, 0.493) 32%, rgba(42, 52, 112, 0.538) 53%, rgba(107, 112, 160, 0.579) 81%, rgba(112, 76, 101, 0.675) 99%);
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    margin: 0 20% 15px 20%;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+}
+
+#tabAcerto {
+    color: white;
+    width: 200px;
+    background: linear-gradient(254deg, rgba(33, 13, 40, 1) 8%, rgba(12, 28, 84, 0.493) 32%, rgba(42, 52, 112, 0.538) 53%, rgba(107, 112, 160, 0.579) 81%, rgba(112, 76, 101, 0.675) 99%);
+    border-radius: 20%;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+  
+}

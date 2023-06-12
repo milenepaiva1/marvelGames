@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+*{
+    padding: 0;
+    border: none;
+    margin: 0;
+    text-decoration: none;
+}
+
+body{
+ 
+ background: url(images/bg-filmes.jpg);
+ background-size: cover;
+ background-position: center;
+ margin-top: 2%;
+
+
+
+}
+.jogo{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;  
+    background-color: rgba(255, 255, 255, 0.362);
+    margin-top: 3%;
+    padding:10%;
+    border-radius: 10px;
+    
+    
+}
+
+.jogo p{
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.jogo h1{
+    font-size: 40px;
+    font-family: 'Righteous', cursive;
+}
+
+.jogo h3{
+    font-size: 25px;
+    font-family: 'Righteous', cursive;
+}
+
+.jogo input{
+    width: 40%;
+    height: 30px;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
+    
+}
+
+.jogo button{
+    width: 20%;
+    height: 30px;
+    border-radius: 5px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 17px;
+    cursor: pointer;
+    
+}
+
+

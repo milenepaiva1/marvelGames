@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da memória</title>
+    <link rel="stylesheet" href="jogo_memoria.css">
+    <link rel="stylesheet" href="jogo_memoria_resetar.css">
+    <link rel="stylesheet" href="caminho/para/o/arquivo/sweetalert2.min.css">
+
+  
+</head>
+<body>
+
+    <a href="index.html">
+        <img style="margin-left: 15px;" width="45px" src="images/voltar.png" alt="">
+      </a>
+    <main>
+        <header>
+            <span>Jogo da memória</span>
+            <span>Tempo: <span class="tempo">0</span></span>
+        </header>
+        <div class="instrucoes">
+            <span>Clique em duas cartas e tente combina-las</span> 
+        </div>
+       
+        <div class="grid">
+            <!-- <div class="card">
+                <div class="face front"></div>
+                <div class="face back"></div>
+            </div> -->
+       
+        </div>
+
+         <button class="novo-jogo" onclick="novoJogo()">Novo Jogo</button>
+    </main>
+
+ 
+
+   
+</body>
+<script src="jogo_memoria.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</html>

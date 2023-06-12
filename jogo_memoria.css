@@ -26,7 +26,7 @@ header{
 }
 body{
     /* background-image: url(../images/teste-backgound.jpg); */
-    background-image: url(../images/background.jpg);
+    background: url(images/background.jpg);
     background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -74,8 +74,10 @@ body{
 }
 
 .back{
-    background-image: url(../images/teste-backgound.jpg);
+    background: url(images/teste-backgound.jpg);
     backface-visibility: hidden;
+    background-size: cover;
+    background-position: center;
 }
 
 .girar-card{
